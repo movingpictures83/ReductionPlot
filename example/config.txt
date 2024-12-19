@@ -1,0 +1,2 @@
+Prefix plugins/ReductionPlot/example/
+Plugin ReductionPlot inputfile parameters.reductionplot.txt outputfile reductionplot.pdf
