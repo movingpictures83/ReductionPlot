@@ -21,6 +21,7 @@ output <- function(outputfile) {
     pdf(outputfile)
     pbmc <- readRDS(paste(pfix, parameters["rdsfile", 2], sep="/"))
     feat <- readSequential(paste(pfix, parameters["features", 2], sep="/"))
+    write.csv(feat, paste(outputfile, "csv", sep="."))
     FeaturePlot(pbmc, features=feat)
 }
 
